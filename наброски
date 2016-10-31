@@ -1,0 +1,46 @@
+from flask import request
+from flask import Flask
+
+app = Flask(__name__)
+
+f = open('C:\\Users\\student\\Desktop\\new.csv, 'r', encoding = 'utf-8')
+@app.route('/words')
+def words():
+    if request.args['password'] == 'username':
+        return 'Name: ' + request.args['words']
+
+#input type= text name = 'a'
+         #пользователь ввел: lingv
+         #request.args = {'a': 'invgv'}
+# идет код хтмл
+ #в двойных фигурных скобках будет лежать не name, a то что ввели
+#нарировать хтмл, вызвать рэндом_тент, заменять
+if __name__ == '__main__':
+    app.run(debug=True)
+    
+    
+ html>
+    <head>
+       <meta charset="utf-8">
+       <title>Введите слово</title>
+    </head>
+ <body>
+
+<form action = "http://127.0.0.1:5000/">
+	<p><b>Введите слово</b><input type="text" name="username" value=""></p>
+	<p><input type="submit"></p>
+</form>
+
+ </body>
+ </html>
+ 
+ <html>
+<head>
+    <p><b>Как вас зовут?</b> <input type="text" name="username" value=""></p>
+</head>
+<body>
+<h1>Привет, меня зовут{{ name }}!</h1>
+
+<p><input type="submit"></p>
+ </form>
+ </body>
