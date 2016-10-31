@@ -1,0 +1,23 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/misunderstanding')
+def misunderstanding():
+    return '<html><body><p> when someone does not understand something correctly </p></body></html>'
+
+@app.route('/destiny')
+def destiny():
+    return '<html><body><p> the things that will happen to someone in the future </p></body></html>'
+
+@app.route('/stress')
+def stress():
+    return '<html><body><p> feelings of worry caused by difficult situations such as problems at work </p></body></html>'
+
+@app.route('/pain')
+def pain():
+    return '<html><body><p> an unpleasant physical feeling caused by an illness or injury </p></body></html>'
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
