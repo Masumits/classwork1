@@ -1,0 +1,26 @@
+#множества
+#время
+#import time
+#time.time()
+#mark1 = time.time()
+#mark2 = time.time()
+#mark2-mark1
+
+#скачать наборыБ составить набор биграм, чтобы они лежали в массивах
+#найти кол-во биграм
+#прискать в массивах и посчитать сколько времени уйдет
+
+def func():
+    f = open("Genproc.csv", 'r', 'encoding=Utf-8')
+    for line in f:
+        words = line.split()
+    bigr =[]
+    i = 0
+    while i<len(words) - 1:
+        w1=words[1]
+        w2=words[i+1]
+        bigr.append(w1 + '' + w2)
+    for word in bigr:
+        print(word)
+    
+func()
