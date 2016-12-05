@@ -29,3 +29,15 @@ id pos
 1 prep
 2 существ
 3 verb
+
+import os
+
+def ms():
+    a = 'C:\\Users\\student\\Desktop\\new.txt'
+    b = 'C:\\Users\\student\\Desktop\\new1.txt'
+    os.system("D:\\Downloads\\mystem.exe " + a + ' ' + b + ' -nid' )
+
+def main():
+    c = ms()
+if __name__ == '__main__':
+    main()
